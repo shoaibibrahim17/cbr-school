@@ -1,0 +1,11 @@
+# Agent tooling (local only)
+.agents/
+skills-lock.json
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Dependencies
+node_modules/
