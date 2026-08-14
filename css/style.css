@@ -458,8 +458,10 @@ img {
   display: flex;
   flex-direction: column;
   position: fixed;
-  inset: 0;
+  left: 0;
+  right: 0;
   top: var(--header-h);
+  bottom: 0;
   background: var(--green-900);
   padding-top: 2rem;
   transform: translateX(100%);
@@ -467,6 +469,7 @@ img {
   gap: var(--sp-xs);
   z-index: 999;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .nav-menu.is-open {
@@ -511,8 +514,8 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 88vh;
-  padding-block: 4rem;
+  min-height: clamp(65vh, 100vh, 88vh);
+  padding-block: clamp(2rem, 5vw, 4rem);
   overflow: hidden;
   background: var(--green-900);
 }
@@ -735,7 +738,49 @@ img {
 
 /* Hide ticker on mobile to prevent horizontal scroll */
 @media (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
   .ticker {
+    display: none;
+  }
+
+  .hero {
+    min-height: 65vh;
+    padding-block: 2rem;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .hero__lead {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .hero__chips {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    gap: 0.5rem 1rem;
+  }
+
+  .hero__chip {
+    font-size: 0.78rem;
+  }
+
+  .hero__scroll {
     display: none;
   }
 }
