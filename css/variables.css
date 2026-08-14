@@ -1,45 +1,84 @@
 /* ==========================================================================
-   Design Tokens — CBR Model School
+   Design Tokens — C.B.R Model School (Premium Edition)
+   Palette: Deep navy + warm gold + soft cream (classic academic luxury)
    ========================================================================== */
 
 :root {
-  /* Colors — school theme */
-  --primary: #1e40af;
-  --primary-light: #3b82f6;
-  --secondary: #f59e0b;
-  --accent: #10b981;
-  --text-dark: #1e293b;
-  --text-light: #64748b;
-  --bg-white: #ffffff;
-  --bg-light: #f8fafc;
-  --bg-cream: #fffbeb;
+  /* Colors — brand */
+  --navy-950: #060f1f;
+  --navy-900: #0a1d3d;
+  --navy-800: #10264b;
+  --navy-700: #1a335f;
+  --navy-600: #24407a;
+  --blue-600: #2563eb;
+  --blue-500: #3b82f6;
+  --blue-100: #e3ecfb;
+
+  --gold-600: #a9852f;
+  --gold-500: #c8a24b;
+  --gold-400: #d9b968;
+  --gold-300: #e6d19a;
+  --gold-100: #f5ecd7;
+  --gold-50: #faf5e9;
+
+  --cream: #faf7f2;
+  --sand: #f2ece1;
+  --white: #ffffff;
+
+  --ink-900: #16202f;
+  --ink-700: #33415a;
+  --ink-600: #4b5a6f;
+  --ink-500: #64748b;
+  --ink-400: #8b98ab;
+
+  --success: #1d8a5f;
+  --success-bg: #e4f3ec;
+  --danger: #b3402f;
+  --danger-bg: #faece9;
 
   /* Typography */
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-size-h1: clamp(2rem, 5vw, 3.5rem);
-  --font-size-h2: clamp(1.5rem, 4vw, 2.5rem);
-  --font-size-h3: clamp(1.25rem, 3vw, 1.75rem);
-  --font-size-body: clamp(1rem, 2vw, 1.125rem);
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
 
-  /* Spacing — Pinterest-style generous whitespace */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2.5rem;
-  --spacing-xl: 4rem;
+  --fs-hero: clamp(2.4rem, 6vw, 4.25rem);
+  --fs-h1: clamp(2rem, 4.5vw, 3.25rem);
+  --fs-h2: clamp(1.6rem, 3.2vw, 2.4rem);
+  --fs-h3: clamp(1.2rem, 2vw, 1.5rem);
+  --fs-h4: 1.1rem;
+  --fs-body: 1rem;
+  --fs-small: 0.9rem;
+  --fs-xs: 0.78rem;
+  --fs-eyebrow: 0.8rem;
 
-  /* Borders & shadows */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
-  --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.2);
+  /* Spacing */
+  --sp-xs: 0.5rem;
+  --sp-sm: 1rem;
+  --sp-md: 1.75rem;
+  --sp-lg: 3rem;
+  --sp-xl: 5rem;
+  --sp-xxl: 7rem;
 
-  /* Layout helpers */
-  --header-height: 72px;
-  --container-max: 1200px;
-  --transition-base: 0.3s ease;
+  /* Radii */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-full: 999px;
+
+  /* Shadows */
+  --sh-sm: 0 1px 3px rgba(10, 29, 61, 0.08);
+  --sh-md: 0 8px 24px rgba(10, 29, 61, 0.1);
+  --sh-lg: 0 20px 50px rgba(10, 29, 61, 0.16);
+  --sh-gold: 0 10px 30px rgba(200, 162, 75, 0.35);
+
+  /* Layout */
+  --header-h: 76px;
+  --topbar-h: 42px;
+  --container: 1200px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 0.2s var(--ease);
+  --t-base: 0.35s var(--ease);
+  --t-slow: 0.6s var(--ease);
 }
