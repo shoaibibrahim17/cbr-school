@@ -783,6 +783,183 @@ img {
   .hero__scroll {
     display: none;
   }
+
+  /* Optimize sections - reduce vertical space */
+  .section {
+    padding-block: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .section__head {
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  }
+
+  .section__title {
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
+  }
+
+  .section__sub {
+    font-size: 0.9rem;
+  }
+
+  /* Split section optimization */
+  .split {
+    gap: 1.5rem;
+  }
+
+  .split__media {
+    margin-bottom: 1rem;
+  }
+
+  .split__media-secondary {
+    display: none;
+  }
+
+  .exp-badge {
+    display: none;
+  }
+
+  /* Feature cards */
+  .features-grid {
+    gap: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.2rem;
+  }
+
+  .feature-card__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .feature-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* Programs section */
+  .programs-grid {
+    gap: 1rem;
+  }
+
+  .program-card {
+    padding: 1rem;
+  }
+
+  .program-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .program-card p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  /* Facilities section */
+  .facilities-grid {
+    gap: 1rem;
+  }
+
+  .facility-card {
+    padding: 1rem;
+  }
+
+  .facility-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .facility-card p {
+    font-size: 0.8rem;
+  }
+
+  /* Stats grid */
+  .stats-grid {
+    gap: 1.5rem 1rem;
+  }
+
+  .stat__num {
+    font-size: clamp(1.8rem, 3.5vw, 2rem);
+  }
+
+  .stat__label {
+    font-size: 0.75rem;
+  }
+
+  /* Vision & Mission */
+  .vm-grid {
+    gap: 1.5rem;
+  }
+
+  .vm-card {
+    padding: 1.2rem;
+  }
+
+  .vm-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .vm-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* Testimonials carousel */
+  .testimonials-carousel {
+    gap: 1rem;
+  }
+
+  /* CTA section */
+  .cta-banner {
+    padding: 1.5rem;
+  }
+
+  .cta-banner__content {
+    gap: 1rem;
+  }
+
+  .cta-banner h2 {
+    font-size: clamp(1.5rem, 5vw, 1.8rem);
+    margin-bottom: 1rem;
+  }
+
+  .cta-banner p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.8rem;
+  }
+
+  .footer-links,
+  .footer-contact {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    padding-block: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom p {
+    margin: 0.4rem 0;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2151,6 +2328,23 @@ img {
 }
 
 .footer-bottom a { color: var(--gold-400); }
+
+.footer-bottom small {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.footer-bottom small a {
+  color: var(--gold-400);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--t-fast);
+}
+
+.footer-bottom small a:hover {
+  color: var(--gold-300);
+  text-decoration: underline;
+}
 
 /* --------------------------------------------------------------------------
    Scroll reveal
