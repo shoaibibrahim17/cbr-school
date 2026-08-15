@@ -460,20 +460,25 @@ img {
   position: fixed;
   left: 0;
   right: 0;
-  top: var(--header-h);
+  top: var(--nav-menu-top, var(--header-h));
   bottom: 0;
+  height: calc(100svh - var(--nav-menu-top, var(--header-h)));
   background: var(--green-900);
   padding-top: 2rem;
   transform: translateX(100%);
   transition: transform var(--t-slow);
   gap: var(--sp-xs);
-  z-index: 999;
+  z-index: 1002;
   overflow-y: auto;
   overflow-x: hidden;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .nav-menu.is-open {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-menu__inner {
@@ -2225,7 +2230,6 @@ img {
   }
 
   .nav-menu {
-    top: 64px;
     background:
       linear-gradient(180deg, rgba(13, 61, 26, 0.98), rgba(27, 94, 46, 0.98)),
       var(--green-900);
@@ -2878,9 +2882,12 @@ img {
     transform: none;
     background: transparent;
     padding: 0;
+    height: auto;
     overflow: visible;
     gap: 0.4rem;
     align-items: center;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-menu__inner {
