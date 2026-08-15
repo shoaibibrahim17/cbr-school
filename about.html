@@ -28,6 +28,14 @@
 </head>
 <body>
 
+  <div class="site-alert site-alert--emergency" role="alert" hidden>
+    <div class="container site-alert__inner">
+      <span class="site-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18.1A2 2 0 0 0 3.5 21h17a2 2 0 0 0 1.7-2.9L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span>
+      <strong>Emergency Alert</strong>
+      <span>Weather closure notices will appear here when active.</span>
+    </div>
+  </div>
+
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <div class="topbar" role="complementary">
@@ -65,7 +73,27 @@
         <div class="nav-menu__inner">
           <a href="index.html" class="nav-link">Home</a>
           <a href="about.html" class="nav-link is-active">About</a>
-          <a href="academics.html" class="nav-link">Academics</a>
+          <div class="nav-item nav-item--mega">
+            <a href="academics.html" class="nav-link">Academics</a>
+            <div class="mega-menu" aria-label="Academics quick links">
+              <a href="academics.html" class="mega-menu__item">
+                <span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5.8A2.8 2.8 0 0 1 6.8 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5"/><path d="M8 7h8M8 11h7"/></svg></span>
+                <span><strong>Academics</strong><small>Classes 1-10 curriculum</small></span>
+              </a>
+              <a href="academics.html#facilities-heading" class="mega-menu__item">
+                <span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20V9l6-5 6 5v11"/><path d="M9 20v-6h6v6"/><path d="M4 20h16"/></svg></span>
+                <span><strong>Facilities</strong><small>Library, labs and campus</small></span>
+              </a>
+              <a href="gallery.html" class="mega-menu__item">
+                <span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 17.5 4 21l3.5-1 8.7-8.7a2.1 2.1 0 0 0-3-3L4.5 17Z"/><path d="m14 7 3 3"/><path d="M17 4h3v3"/></svg></span>
+                <span><strong>Arts</strong><small>Creative and cultural life</small></span>
+              </a>
+              <a href="gallery.html" class="mega-menu__item">
+                <span class="line-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 8.6 6.4"/><path d="M3.4 14.6A9 9 0 0 1 12 3"/><path d="m8 21 4-9 8.6-2.6"/></svg></span>
+                <span><strong>Sports</strong><small>Fitness and teamwork</small></span>
+              </a>
+            </div>
+          </div>
           <a href="admissions.html" class="nav-link">Admissions</a>
           <a href="gallery.html" class="nav-link">Gallery</a>
           <a href="contact.html" class="nav-link">Contact</a>

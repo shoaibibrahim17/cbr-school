@@ -46,7 +46,7 @@
       if (e.key === 'Escape') close();
     });
 
-    $$('.nav-link', menu).forEach((link) => link.addEventListener('click', close));
+    $$('.nav-link, .mega-menu__item', menu).forEach((link) => link.addEventListener('click', close));
   }
 
   /* --------------------------------------------------------------------------
