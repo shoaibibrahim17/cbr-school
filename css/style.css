@@ -1122,6 +1122,12 @@ img {
   line-height: 1.7;
 }
 
+/* Ensure any lists inside white feature cards are readable even if parent contexts set color */
+.feature-card .check-list,
+.feature-card .check-list li {
+  color: var(--ink-700);
+}
+
 .feature-card__link {
   font-weight: 800;
   font-size: 0.9rem;
