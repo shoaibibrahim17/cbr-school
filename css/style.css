@@ -2061,6 +2061,17 @@ img {
 
 .contact-card a:hover { color: var(--gold-600); }
 
+/* Ensure vm-card (vision/mission cards) render dark text when used on light backgrounds */
+.vm-card:not(.vm-card--navy) {
+  background: var(--white);
+  color: var(--ink-900);
+}
+.vm-card:not(.vm-card--navy) h3 { color: var(--ink-900); }
+.vm-card:not(.vm-card--navy) p { color: var(--ink-600); }
+.vm-card:not(.vm-card--navy) ul li { color: var(--ink-700); }
+.vm-card:not(.vm-card--navy) ul svg { color: var(--gold-600); }
+
+
 .contact-form {
   background: var(--white);
   border: 1px solid rgba(10, 29, 61, 0.08);
