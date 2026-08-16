@@ -36,8 +36,8 @@
   --danger-bg: #f5e8eb;
 
   /* Typography */
-  --font-display: 'Fraunces', 'Georgia', serif;
-  --font-body: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  --font-display: 'Figtree', 'Figtree Fallback', system-ui, sans-serif;
+  --font-body: 'Figtree', 'Figtree Fallback', system-ui, sans-serif;
 
   /* Enhanced typography scales for premium feel */
   --fs-hero: clamp(2.8rem, 7vw, 4.8rem);
